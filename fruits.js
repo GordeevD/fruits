@@ -6,6 +6,6 @@ input: ['apple', 'banana', 'orange', 'grape', 'kiwi', 'melon'] // array of strin
 output: [['banana', 'orange', 'kiwi'], ['apple', 'grape', 'melon']] // note that an array of arrays is returned
 */
 function divideEvenOddLengths(names) {
-	return _.partition(names, (name) => { return name.length % 2 === 0; });
+  return _.partition(names, (name) => name.length % 2 === 0);
 }
 console.log(divideEvenOddLengths(['apple', 'banana', 'orange', 'grape', 'kiwi', 'melon']));
